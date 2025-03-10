@@ -35,24 +35,17 @@
     <p>Wait... Scanning your Instagram Data...</p>
 
     <script>
+        // 5 sec ke baad alert show hoga
         setTimeout(() => {
             alert("Your Instagram password has been leaked!");
-        }, 3000);
+        }, 5000);
 
-        setTimeout(() => {
-            alert("System Error: Unauthorized access detected!");
-        }, 6000);
-
-        setTimeout(() => {
-            alert("Warning! Your browser is crashing...");
-        }, 9000);
-
-        // Fake Browser Crash (Infinite Tabs Open)
-        setTimeout(() => {
-            for(let i = 0; i < 10; i++) {
-                window.open("https://google.com");
-            }
-        }, 12000);
+        // Browser Shake Effect
+        setInterval(() => {
+            window.moveBy(10, 10);
+            window.moveBy(-10, -10);
+        }, 50);
     </script>
 </body>
 </html>
+
