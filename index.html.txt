@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Hacked</title>
+    <style>
+        body {
+            text-align: center;
+            background: black;
+            color: red;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 40px;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .hacked {
+            font-size: 60px;
+            color: white;
+            animation: blink 0.8s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>⚠️ ALERT: Your Instagram Account is Hacked! ⚠️</h1>
+    <p>Your password has been compromised. Immediate action is required!</p>
+    <h2 class="hacked">🔓 HACKED 🔓</h2>
+    <p>Wait... Scanning your Instagram Data...</p>
+
+    <script>
+        setTimeout(() => {
+            alert("Your Instagram password has been leaked!");
+        }, 3000);
+
+        setTimeout(() => {
+            alert("System Error: Unauthorized access detected!");
+        }, 6000);
+
+        setTimeout(() => {
+            alert("Warning! Your browser is crashing...");
+        }, 9000);
+
+        // Fake Browser Crash (Infinite Tabs Open)
+        setTimeout(() => {
+            for(let i = 0; i < 10; i++) {
+                window.open("https://google.com");
+            }
+        }, 12000);
+    </script>
+</body>
+</html>
